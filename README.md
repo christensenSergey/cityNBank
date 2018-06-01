@@ -1,5 +1,5 @@
 # cityNBank //Java web app
-Dont forget change application.properties as you need.
+Dont forget to change application.properties as you need.
 
 To start app execute in command line from project folder:
 1) mvn package //to compile project
