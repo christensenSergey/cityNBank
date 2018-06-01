@@ -1,35 +1,27 @@
 # cityNBank
+Dont forget change application.properties as you need.
 To start app execute in command line from project folder:
-mvn package
-mvn spring-boot:run 
+mvn package //to compile project
+mvn spring-boot:run //to run project on server
 
-Не забудьте изменить настройки application.properties под свою БД.
-
-Задача:
-
-Написать веб-приложение, выполняющее функции банка. Пусть это будет банк в городе N насчитывающем около 50 жителей.
-
-Нужно хранить данные о:
-клиентах банка (идентификатор, имя — адрес, возраст);
-счетах (идентификатор, идентификатор владельца, количество денег);
-транзакциях — переводах денег между счетами или их поступлениях / списаниях.
-
-Приложение должно содержать 3 страницы и дополнительные формы:
+Task:
+Write a web application that serves as a bank. Let it be a bank in the city of N with about 50 inhabitants.
+It is necessary to store data about:
+Customers (identifier, name - address, age);
+Accounts (identifier, owner ID, amount);
+Transactions - money transfers between accounts or their refills/write-offs.
+The application should contain 3 pages and additional forms:
 список клиентов банка, при щелчке по имени открываются счета выбранного клиента (плюс внизу форма для добавления нового клиента);
 список счетов заданного клиента (плюс внизу форма для добавления нового счёта);
 форма для перевода денег между счетами (и для пополнения / списания денег: это могут быть отдельные формы, на ваш вкус);
 страница со списком транзакций (сверху форма фильтра, чтобы можно было выбрать за период и/или по заданному пользователю);
 дополнения — на ваш вкус, например, в списке клиентов можно сумму на всех счетах у каждого выводить и т. п.
 
-Задание должно быть выполнено с применением технологий, инструментов и библиотек:
-Spring-boot
-база данных MySQL
+Task must be done using technologies, tools and libraries: Spring-boot, MySQL database.
 
-Исходный код выложить на GitHub, задание снабдить пояснительной запиской как откомпилировать и запустить проект. Для сборки использовать Maven или Gradle, запуск веб-сервера с приложения должен осуществляться с командной строки в Tomcat container (Spring Boot в помощь:).
-
-От автора:
-Дамп базы в папке "db".
-К проекту подключен devtools.
-Баланс хранится в Long, так как Float и Doule нельзя использовать из-за потери точности. Решение этого вопроса не является целью даной работы.
-Для удобства и дальнейшего масштабирования операциям пополнения / списания денег, при трансакции, присваивается "senderId=0".
-Трансакциям которые небыли проведены успешно присваивается тип "DENIED"
+From author:
+Database dump is in the "db" folder.
+Devtools is connected to the project.
+The balance is stored as Long, because of Float and Double can not be used due to loss of accuracy. Solution of this question is not the purpose of this work.
+For convenience and further scaling of refills/write-offs their transaction "senderId" has been assigned to "0".
+Transactions that were not successfull have "DENIED" type.
