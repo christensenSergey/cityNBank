@@ -1,8 +1,9 @@
-# cityNBank //Java web app//
+# cityNBank //Java web app
 Dont forget change application.properties as you need.
+
 To start app execute in command line from project folder:
-1) mvn package //to compile project//
-2) mvn spring-boot:run //to run project on server//
+1) mvn package //to compile project
+2) mvn spring-boot:run //to run project on server
 
 Task:
 Write a web application that serves as a bank. Let it be a bank in the city of N with about 50 inhabitants.
