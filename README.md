@@ -6,7 +6,7 @@ To start app execute in command line from project folder:
 2) mvn spring-boot:run //to run project on server
 
 Task:
-Write a web application that serves as a bank. Let it be a bank in the city of N with about 50 inhabitants.
+Write a web application that serves as a bank. Let it be a bank in the N city with about 50 inhabitants.
 
 It is necessary to store data about:
 1) Clients (identifier, name - address, age);
