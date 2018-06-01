@@ -1,4 +1,8 @@
 # cityNBank
+To start app execute in command line from project folder:
+mvn package
+mvn spring-boot:run 
+
 Не забудьте изменить настройки application.properties под свою БД.
 
 Задача:
